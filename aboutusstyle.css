@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar style  */
+.navigation-bar{
+    display: flex;
+    margin: 1rem 1rem;
+    font-family: 'Segoe UI';
+}
+.close-hamburg-btn{
+    height: 1.5rem;
+}
+.close-hamburg{
+    display: none;
+}
+.navigation-elements{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hamburg-menu{
+    height: 2rem;
+}
+.hamburg-button{
+    display: none;
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+    flex: 0;
+    justify-content: space-between;
+}
+.logo-title h1{
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+.navigation-elements{
+    display: flex;
+    flex: 1;
+}
+.navigation-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+}
+.navigation-items a{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(255, 123, 0);
+}
+/* hover navbar  */
+.about::after{
+    content: "";
+    display: block;
+    position: relative;
+    height: 0.2rem;
+    width: 100%;
+    transform: scaleX(1);
+    background-color:rgb(255, 123, 0) ;
+
+}
+.navigation-items li{
+    transition: all 0.1s ease-in-out;
+}
+.navigation-items li:hover{
+    transform: scale(1.1)
+
+}
+
+
+/* navbar hover  */
+
+/* navbar style  */
+
+/* logo styling starts */
+
+#main-logo{
+    height: 3.5rem;
+}
+
+/* logo styling ends  */
+
+.main-container{
+    margin: 6rem;
+    z-index: 2;
+}
+.about-us-title{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0rem;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0.1rem solid ;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(255, 123, 0);
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+.content-box:hover{
+    transform: scale(1.1);
+}
+/* .title h1::after{
+    content: "";
+    background-color:rgb(255, 123, 0);
+    height: 0.2rem;
+    width: 100%;
+    position: relative;
+    display: block;
+    border-radius: 1rem;
+    
+} */
+.content{
+    color: black;
+}
+
+
+/* footer  */
+.footer-container{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI';
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.footer-container .contactus{
+    word-wrap: break-word;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+}
+.footer-container .contactus li{
+    list-style: none;
+    margin-bottom: 2%;
+}
+.footer-container .other-sources ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    color: white;
+    gap: 1.5rem;
+    list-style: none;
+}
+.svg-footer-images{
+    padding-top: 0.5rem;
+}
+.footer-container .other-sources ul a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-container .other-sources{
+    padding-right: 4rem;
+    padding-left: 4rem;  
+}
+.svg-footer-images{
+    height: 1.7rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 430px){
+    html{
+        font-size: 10px;
+    }
+
+    .hamburg-button{
+        display: block;        
+    }
+    .logo-title h1{
+        font-size: 1rem;
+    }
+    .home-image{
+        display: none;
+    }
+    .navigation-items{
+        position: absolute;
+        background-color: whitesmoke;
+        top: 0;
+        display: flex;
+        padding: 3rem;
+        z-index: 10;
+    }
+    .nav-item{
+        padding: 2rem;
+    }
+    
+    .home-details{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 930px){
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 850px){
+    .navigation-items{
+        display: none;
+    }
+
+    .home-details p{
+        font-size: 1rem;
+    }
+    .close-hamburg{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem;
+    }
+    .navigation-items{
+        position: absolute;
+        background-color: whitesmoke;
+        top: 0;
+        padding: 3rem;
+        z-index: 3;
+    }
+    .nav-item{
+        padding: 3rem;
+    }
+    .navigation-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburg-button{
+        display: block;        
+    }
+    .navigation-elements{
+        justify-content: flex-end;
+    }
+    .logo-title  {
+        flex: 10;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px){
+    html{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 7px;
+    }
+}
